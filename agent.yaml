@@ -1,0 +1,11 @@
+spec_version: "0.1.0"
+name: candidate-interview-feedback-coverage-checker
+version: 0.1.0
+description: Review interview loops for required rubric sections and submitted feedback.
+skills:
+  - candidate-interview-feedback-coverage-checker-skill
+tools:
+  - review-candidate-interview-feedback-coverage-checker
+tags:
+  - hr-recruiting
+  - evidence-driven

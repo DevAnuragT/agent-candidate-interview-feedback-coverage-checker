@@ -1,0 +1,59 @@
+{
+  "name": "review-candidate-interview-feedback-coverage-checker",
+  "description": "Run Candidate Interview Feedback Coverage Checker",
+  "version": "0.1.0",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "payload": {
+        "type": "object",
+        "properties": {
+          "candidate_id": {
+            "type": "string",
+            "description": "candidate id"
+          },
+          "interviewers": {
+            "type": "array",
+            "description": "interviewers"
+          },
+          "rubric_sections": {
+            "type": "array",
+            "description": "rubric sections"
+          },
+          "feedback_records": {
+            "type": "array",
+            "description": "feedback records"
+          }
+        },
+        "required": [
+          "candidate_id",
+          "interviewers",
+          "rubric_sections",
+          "feedback_records"
+        ]
+      }
+    },
+    "required": [
+      "payload"
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "status": {
+        "type": "string"
+      },
+      "score": {
+        "type": "object"
+      },
+      "findings": {
+        "type": "array"
+      }
+    }
+  },
+  "implementation": {
+    "type": "script",
+    "path": "review-candidate-interview-feedback-coverage-checker.py",
+    "runtime": "python3"
+  }
+}

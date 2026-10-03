@@ -1,0 +1,29 @@
+{
+  "slug": "candidate-interview-feedback-coverage-checker",
+  "title": "Candidate Interview Feedback Coverage Checker",
+  "category": "hr-recruiting",
+  "description": "Review interview loops for required rubric sections and submitted feedback.",
+  "fields": {
+    "candidate_id": {
+      "label": "candidate id",
+      "kind": "required",
+      "minimum": 0
+    },
+    "interviewers": {
+      "label": "interviewers",
+      "kind": "list",
+      "minimum": 1
+    },
+    "rubric_sections": {
+      "label": "rubric sections",
+      "kind": "list",
+      "minimum": 1
+    },
+    "feedback_records": {
+      "label": "feedback records",
+      "kind": "list",
+      "minimum": 1
+    }
+  },
+  "limitations": "Uses caller-provided evidence only; cannot confirm external facts. Human review remains required."
+}
